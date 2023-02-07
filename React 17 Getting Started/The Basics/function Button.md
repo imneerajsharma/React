@@ -11,12 +11,7 @@ function Button(){
 // b) updater function (setter)
   
   const  [counter, setCounter]=useState(42) // Aray Destructuring
-   return <button onClick={
-     function logRandom(){
-  console.log(Math.random());
-}
-     
-     }>{counter}</button>  //onClick={functionRef }
+   return <button onClick={ () => console.log(Math.random())}>{counter}</button>   //Arrow function     //onClick={functionRef }
 
  
 }
