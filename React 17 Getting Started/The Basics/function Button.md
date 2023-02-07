@@ -10,8 +10,8 @@ function Button(){
 
 // b) updater function (setter)
   
-  const  [counter, setCounter]=useState(42) // Aray Destructuring
-   return <button onClick={ () => setCounter(counter+1) }>{counter}</button>   //Arrow function     //onClick={functionRef }
+  const  [counter, setCounter]=useState(5) // Aray Destructuring
+   return <button onClick={ () => setCounter(counter*2) }>{counter}</button>   //Arrow function     //onClick={functionRef }
 
  
 }
