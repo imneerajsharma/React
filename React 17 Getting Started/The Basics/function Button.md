@@ -1,5 +1,18 @@
+function logRandom(){
+  console.log(Math.random());
+}
+
 function Button(){
-   return <button>TEST</button>
+  //a,b = useState()
+
+// useState() results:
+// a) state object (getter)
+
+// b) updater function (setter)
+  
+  const  [counter, setCounter]=useState(42) // Aray Destructuring
+   return <button onClick={logRandom}>{counter}</button>  //onClick={functionRef }
+
  
 }
 
