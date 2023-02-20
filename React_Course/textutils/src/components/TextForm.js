@@ -7,15 +7,19 @@ export default function TextForm(props) {
         // console.log("Uppercase was Clicked" +text);
         let newText=text.toUpperCase();
         setText(newText);
+        props.showAlert(" Converted to Upper Case!", "success")
+        
     }
     const handleLoClick =() =>{
         
         let newText=text.toLowerCase();
         setText(newText);
+        props.showAlert(" Converted to Lower Case", "success")
     }
     const handleClearClick =() =>{
         let newText='';
         setText(newText);
+        props.showAlert(" Text cleared!", "success")
     }
     const handleCopyClick =() =>{
         const textToCopy = text;
@@ -26,10 +30,13 @@ export default function TextForm(props) {
         .catch((err) => {
         console.error('Error copying text: ', err);
         });
+
+        props.showAlert(" Text copied to clipboard!", "success")
     }
     const handleRemoveExtraSpacesClick =() =>{
         let newText=text.replace(/\s+/g,' ').trim();
         setText(newText);
+        props.showAlert(" Extra space removed!", "success")
     }
 
 
