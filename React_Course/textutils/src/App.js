@@ -1,12 +1,25 @@
 //import logo from './logo.svg';
 import './App.css';
-// import About from './components/About';
+import About from './components/About';
 import Navbar from './components/Navbar';
 import React, { useState} from 'react';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
+// import logo from './components/logo.png';
 
-// import TextForm from './components/TextForm';
+// import React from "react";
+
+
+
+// import {
+//   // createBrowserRouter,
+//   // RouterProvider,
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+//   Link
+// } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 
 function App() {
@@ -37,17 +50,34 @@ function App() {
 }
 
   return (
-          <>
-              
-            {/* <Navbar title="TextUtils" aboutText="About TEXT" mode={mode}/> */}
-            <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
-            <Alert alert={alert}/>
-            {/* <Alert alert="this is an Alert"/> */}
-            <div className="container my-3">
-              <TextForm showAlert={showAlert} heading="Enter your text to analyze below" mode={mode}/>
-              {/* <About/> */}
-            </div>
+          <>                          
+            {/* <Router>
+                <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode}/>
+                <Alert alert={alert}/>
+                <div className="container my-3">
+                <Routes>
+                      <Route path="/about">
+                        <About />
+                      </Route>                    
+                      <Route path="/">
+                      <TextForm showAlert={showAlert} heading="Enter your text to analyze below" mode={mode}/>
+                      </Route>
+                </Routes>           
+                </div>
+            </Router> */}
+            <Router>
+            
+        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+        <Alert alert={alert} />
+        <div className="container mt-3">
 
+          <Routes>
+            <Route exact path="/about" element={<About />}> </Route>
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text to Analyse below" mode={mode} />}></Route>
+          </Routes>
+        </div>
+      </Router>
               
           
           </>
