@@ -65,6 +65,7 @@ function App() {
                 </Routes>           
                 </div>
             </Router> */}
+            
             <Router>
             
         <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
@@ -73,8 +74,8 @@ function App() {
         <div className="container mt-3">
 
           <Routes>
-            <Route exact path="/about" element={<About />}> </Route>
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text to Analyse below" mode={mode} />}></Route>
+            <Route exact path="/about" element={<About  mode={mode} />}> </Route>
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word counter , Character Counter Remove extra Spaces" mode={mode} />}></Route>
           </Routes>
         </div>
       </Router>
