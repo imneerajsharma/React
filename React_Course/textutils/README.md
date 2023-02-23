@@ -1,5 +1,9 @@
 # Getting Started with Create React App
 
+Website Link : https://textutils-umber-iota.vercel.app/
+
+TextUtils is an online tool that enables fast and efficient analysis of text, including word count, character count, and reading time. It is a free character counter tool that instantly provides word and character count statistics for a given text. This makes it ideal for writing texts with specific word or character limits. Additionally, Textutils works on any web browser, such as Chrome, Firefox, Internet Explorer, Safari, and Opera, and is suitable for counting characters in various types of text, including Facebook posts, blogs, books, Excel and PDF documents, and essays.
+
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/47946810/220798398-2b651f52-4619-446f-8657-16e86b850a41.png">
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/47946810/220798496-fea55f64-e790-4599-93d8-c30c70b53146.png">
 
@@ -43,34 +47,6 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
