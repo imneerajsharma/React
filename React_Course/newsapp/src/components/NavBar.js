@@ -10,12 +10,12 @@ export class NavBar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark ">
   <div className="container-fluid">
-    <a className="navbar-brand" href="/">
-    {/* <img src="src/foxnews.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/>NewsFox</a> */}
-
-    <img src="/foxnews6.png" alt="Logo" width="40" height="40" className="d-inline-block align-text-top"/> NewsFox</a>
+    <a className="navbar-brand mx-1" href="/">
+        {/* <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"> */}
+        <img src="/foxnews9.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-mid" />
+          NewsFox</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
