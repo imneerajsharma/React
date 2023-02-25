@@ -1,0 +1,16 @@
+ 1001  npm run start
+ 1002  nodemon help
+ 1003  nodemon .\index.js
+ 1004  npm init
+ 1005  npm i express
+ 1006  npm i mongoose
+ 1007  npm i -D nodemon
+ 1008  nodemon .\index.js
+ 1009  npm install -g nodemon
+ 1010  npm install --save-dev nodemon
+ 1011  nodemon .\index.js
+ 1012  npm i -g nodemon
+ 1013  npm install -save nodemon
+ 1014  npm run server
+ 1015  nodemon
+ 1016  history
