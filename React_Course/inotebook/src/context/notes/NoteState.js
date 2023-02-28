@@ -9,17 +9,9 @@ const NoteState =(props) =>{
         "class": "6b"
     }
 
-    const[state, setState]= useState(s1);
-    const update =()=> {
-        setTimeout(()=>{
-            setState({
-                "name": "Rahul",
-                "class": "9b"
-            },)
-        },1000)
-    }
+   
     return (
-        <NoteContext.Provider value={{state,update}}>
+        <NoteContext.Provider value={{}}>
             {props.children}
         </NoteContext.Provider>
     )
