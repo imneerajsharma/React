@@ -4,7 +4,7 @@ import Noteitem from "./Noteitem";
 import AddNote from "./AddNote";
 const Notes = () => {
   const context = useContext(noteContext);
-  const { notes, getNotes,editNote } = context;
+  const { notes, getNotes, editNote } = context;
   useEffect(() => {
     getNotes();
     // eslint-disable-next-line
@@ -29,7 +29,7 @@ const Notes = () => {
   };
 
   const handleClick = (e) => {
-    editNote(note.id,note.etitle,note.edescription,note.etag)
+    editNote(note.id, note.etitle, note.edescription, note.etag);
     refClose.current.click();
   };
 
@@ -59,9 +59,9 @@ const Notes = () => {
         <div className="modal-dialog">
           <div className="modal-content">
             <div className="modal-header">
-              <h1 className="modal-title fs-5" id="exampleModalLabel">
+              <h5 className="modal-title " id="exampleModalLabel">
                 Edit Note
-              </h1>
+              </h5>
               <button
                 type="button"
                 className="btn-close"
@@ -82,7 +82,9 @@ const Notes = () => {
                     name="etitle"
                     value={note.etitle}
                     aria-describedby="emailHelp"
-                    onChange={onChange} minLength={5} required
+                    onChange={onChange}
+                    minLength={5}
+                    required
                   />
                 </div>
                 <div className="mb-3">
@@ -95,7 +97,9 @@ const Notes = () => {
                     id="edescription"
                     value={note.edescription}
                     name="edescription"
-                    onChange={onChange} minLength={5} required
+                    onChange={onChange}
+                    minLength={5}
+                    required
                   />
                 </div>
 
@@ -109,17 +113,10 @@ const Notes = () => {
                     id="etag"
                     value={note.etag}
                     name="etag"
-                    onChange={onChange} required
+                    onChange={onChange}
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  onClick={handleClick}
-                >
-                  Add Note
-                </button>
               </form>
             </div>
             <div className="modal-footer">
@@ -132,7 +129,9 @@ const Notes = () => {
                 Close
               </button>
               <button
-                disabled ={note.etitle.length<5 || note.edescription.length<5}
+                disabled={
+                  note.etitle.length < 5 || note.edescription.length < 5
+                }
                 onClick={handleClick}
                 type="button"
                 className="btn btn-primary"
@@ -147,7 +146,7 @@ const Notes = () => {
       <div className="row my-3">
         <h1>Your Note</h1>
         <div className="container mx-2">
-        {notes.length===0 && "No notes to display"}
+          {notes.length === 0 && "No notes to display"}
         </div>
         {notes.map((note) => {
           return (
