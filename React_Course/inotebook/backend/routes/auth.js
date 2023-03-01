@@ -14,6 +14,7 @@ router.post('/createuser',[
     body('email',"Enter a valid email").isEmail(),
     body('password',"password must be atleast 5 characters").isLength({ min: 5 }),
 ], async(req,res)=>{
+    
     // If there are errors , return the Bad Request and the errors
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
@@ -66,7 +67,7 @@ router.post('/login',[
   body('email',"Enter a valid email").isEmail(),
   body('password',"password cannot be blank").exists(),
 ], async(req,res)=>{
-
+  let success=false;
   // If there are errors , return the Bad Request and the errors
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
@@ -77,12 +78,14 @@ router.post('/login',[
   try{
       let user= await User.findOne({email});
       if(!user){
+        success = false
         return res.status(400).json({error: "Please try to login with correct credentials"});
       }
 
       const passwordCompare =await bcrypt.compare(password, user.password);
     if(!passwordCompare){
-      return res.status(400).json({error: "Please try to login with correct credentials"});
+      success = false
+      return res.status(400).json({success, error: "Please try to login with correct credentials"});
     }
   
     const data={
@@ -91,7 +94,8 @@ router.post('/login',[
       }
     }
     const authtoken = jwt.sign(data,JWT_SECRET);
-    res.json({authtoken})
+    success=true;
+    res.json({success,authtoken})
 
 
   }
@@ -103,7 +107,7 @@ router.post('/login',[
 })
 
 
-// Route 3:  Get LoggedIn a User using :POST "/api/auth/auth/getuser" . Login required
+// Route 3:  Get LoggedIn a User using :POST "/api/auth/getuser" . Login required
 router.post('/getuser', fetchuser, async(req,res)=>{
 
 try {
