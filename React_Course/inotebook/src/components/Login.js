@@ -7,11 +7,12 @@ const Login = (props) => {
     password: "",
   });
 
-  let history = useNavigate();
+  let navigate = useNavigate();
+
   const handleSubmit = async (e) => {
-    const host = "http://localhost:5010";
+    // const host = "http://localhost:5010";
     e.preventDefault();
-    const response = await fetch(`${host}/api/auth/login`, {
+    const response = await fetch("http://localhost:5010/api/auth/login",{
       method: "POST",
 
       headers: {
@@ -27,7 +28,8 @@ const Login = (props) => {
     if (json.success) {
       //Save the auth token and redirect
       localStorage.setItem("token", json.authtoken);
-      history.push("/");
+      // history.push("/");
+      navigate("/");
     } else {
       alert("Invalid credentials");
     }
