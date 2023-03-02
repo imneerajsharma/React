@@ -15,6 +15,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
+          <img src="/notebook4.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-mid mx-2" />
             iNotebook
           </Link>
           <button
