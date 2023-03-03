@@ -6,7 +6,7 @@ iNotebook, the perfect solution for those who want to keep their notes safe and 
 
 ## Youtube Link :
 <p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/oxxAVNQSlis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p width="560" height="315" src="https://www.youtube.com/embed/oxxAVNQSlis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></p>
 </p>
 
 ## Screenshot :
