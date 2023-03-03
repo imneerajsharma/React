@@ -1,4 +1,4 @@
-# Text Utils React App
+# Text Utils - React App
 
 Website Link : https://textutils-umber-iota.vercel.app/
 
