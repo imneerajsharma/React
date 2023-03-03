@@ -5,9 +5,8 @@ Website Link : https://inotebook-chi-sand.vercel.app/login
 iNotebook, the perfect solution for those who want to keep their notes safe and easily accessible from anywhere in the world. Our cloud-based platform allows you to securely store all your notes and access them anytime, anywhere, on any device. Our mission is to simplify the way you take and manage notes. With iNotebook, you don't have to worry about losing your important notes or forgetting important details. You can organize your notes in different categories, add tags and labels, and easily search for any note using our advanced search functionality. iNotebook is designed to be user-friendly and intuitive, so you can get started right away. You can create new notes in just a few clicks, and our rich text editor allows you to format your notes as you like, add images, tables, and more. You can also set reminders for important notes, so you never forget a deadline or an appointment again.
 
 ## Youtube Link :
-<p>
 <p width="560" height="315" src="https://www.youtube.com/embed/oxxAVNQSlis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></p>
-</p>
+
 
 ## Screenshot :
 <img width="1680" alt="image" src="https://user-images.githubusercontent.com/47946810/222601503-4c754fc5-585c-4cab-af4b-be02898d324d.png">
