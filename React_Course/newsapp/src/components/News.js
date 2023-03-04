@@ -42,16 +42,17 @@ export class News extends Component {
 
   }
   async componentDidMount() {
-    let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a5aa19735df0460faf518b95d6f2c140&page=1&pageSize=${this.props.pageSize}`;
-        this.setState({loading:true});
-    let data = await fetch(url);
-    let parsedData = await data.json();
-    console.log(parsedData);
-    this.setState({
-      articles: parsedData.articles,
-      totalResults: parsedData.totalResults,
-      loading:false
-    });
+    // let url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=a5aa19735df0460faf518b95d6f2c140&page=1&pageSize=${this.props.pageSize}`;
+    //     this.setState({loading:true});
+    // let data = await fetch(url);
+    // let parsedData = await data.json();
+    // console.log(parsedData);
+    // this.setState({
+    //   articles: parsedData.articles,
+    //   totalResults: parsedData.totalResults,
+    //   loading:false
+    // });
+    this.updateNews();
   }
 
   handlePrevClick = async () => {
@@ -99,6 +100,28 @@ export class News extends Component {
         <h1 className="text-center" style={{margin: '35px 0px'}}>NewsFox - Top Headlines</h1>
         {this.state.loading && <Spinner />}
 
+        <div className="container d-flex justify-content-between">
+          <button
+            disabled={this.state.page <= 1}
+            type="button"
+            className="btn btn-dark"
+            onClick={this.handlePrevClick}
+          >
+            &larr; Previous
+          </button>
+          <button
+            disabled={
+              this.state.page + 1 >
+              Math.ceil(this.state.totalResults / this.props.pageSize)
+            }
+            type="button"
+            className="btn btn-dark"
+            onClick={this.handleNextClick}
+          >
+            Next &rarr;
+          </button>
+        </div>
+        
         <div className="row">
           {!this.state.loading && this.state.articles.map((element) => {
             return (
