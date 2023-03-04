@@ -17,8 +17,8 @@ export class NavBar extends Component {
   <div className="container-fluid">
     <Link className="navbar-brand mx-1" to="/">
         {/* <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24"> */}
-        <img src="/foxnews9.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-mid" />
-          NewsFox</Link>
+        <img src="/foxnews8.png" alt="Logo" width="50" height="50" className="d-inline-block align-text-mid mx-3" />
+        NewsFox</Link>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
