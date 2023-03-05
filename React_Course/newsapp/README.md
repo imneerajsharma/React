@@ -1,4 +1,4 @@
-# Newsfox - React App
+# Newsfox - React App (Using News API)
 
 Welcome to NewsFox, a React app designed to keep you up-to-date with the latest news on a variety of topics. Whether you're interested in politics, sports, weather, or just need a quick bite of daily news, NewsFox has got you covered.
 
