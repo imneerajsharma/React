@@ -1,4 +1,18 @@
-# Getting Started with Create React App
+# Newsfox - React App (Using News API)
+
+Welcome to NewsFox, a React app designed to keep you up-to-date with the latest news on a variety of topics. Whether you're interested in politics, sports, weather, or just need a quick bite of daily news, NewsFox has got you covered.
+
+Our app is user-friendly and easy to navigate, with a clean and modern design. You can choose from a range of categories and subcategories, allowing you to filter the news based on your interests. Want to know what's happening in the world of sports? Just click on the "Sports" tab and you'll find all the latest news on your favorite teams and players.
+
+In addition to providing you with breaking news, NewsFox also offers a personalized experience. You can customize the app to display news from specific regions or countries, ensuring that you stay informed about events that matter to you. Plus, our app is constantly updated with the latest news stories, so you can be sure that you're always in the know.
+
+## Youtube Link :
+[![iNotebook](https://img.youtube.com/vi/7jh27Aq5FZI/0.jpg)](https://www.youtube.com/watch?v=7jh27Aq5FZI)
+
+
+## Screenshot :
+<img width="1680" alt="image" src="https://user-images.githubusercontent.com/47946810/222940963-ad25fad0-a565-468c-87f9-31351a7ffa01.png">
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
