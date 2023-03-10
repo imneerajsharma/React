@@ -1,82 +1,80 @@
 import React from "react";
+  import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 
 const SocialLinks = () => {
   const links = [
     {
       id: 1,
       child: (
-        <div className="flex items-center">
-      <img src="/linkedin.png" alt="LinkedIn" width={50} height={50} />
-      {/* <span className="ml-2 font-bold text-lg"></span> */}
-      
-      
-      
-    </div>
+        <>
+          {/* LinkedIn <FaLinkedin size={30} color="#0077B5"/> */}
+          LinkedIn <img src="/linkedin.png" alt="LinkedIn" width={50} height={50} className="ml-6"/>
+        </>
       ),
       href: "https://www.linkedin.com/in/neeraj-kr-sharma/",
       style: "rounded-tr-md",
+      bgColor: "#0077B5",
+      
     },
     {
       id: 2,
       child: (
-        <div className="flex items-center">
-        <img src="/github.png" alt="GitHub" width={50} height={50} />
-        {/* <span className="ml-2 font-bold text-lg"></span> */}
-        
-      </div>
+        <>
+          {/* GitHub <FaGithub size={30} color="#211F1F"/> */}
+          GitHub <img src="/github.png" alt="GitHub" width={50} height={50} className="ml-9"/>
+        </>
       ),
       href: "https://github.com/imneerajsharma",
+      bgColor: "#211F1F",
       style: "rounded-tr-md",
     },
     {
       id: 3,
       child: (
-        <div className="flex items-center">
-        <img src="/gmail.png" alt="Gmail" width={50} height={50} />
-        {/* <span className="ml-2 font-bold text-lg"></span> */}
-       
-      </div>
+        <>
+          {/* Mail <HiOutlineMail size={30} color="#D44638"/> */}
+          <div className="flex items-center ml-4"></div>
+          Mail <img src="/gmail.png" alt="Gmail" width={50} height={50} className="ml-10"/>
+        </>
       ),
       href: "mailto:neeraj_kr_sharma@outlook.com",
+      style: "rounded-tr-md",
+      bgColor: "#D44638",
     },
     {
       id: 4,
       child: (
-        <div className="flex items-center">
-        <img src="/resume1.png" alt="Resume" width={50} height={50} />
-        {/* <span className="ml-2 font-bold text-lg"></span> */}
-        
-      </div>
+        <>
+          {/* Resume <BsFillPersonLinesFill size={30} color="#0077B5"/> */}
+          Resume <img src="/resume1.png" alt="Resume" width={50} height={50} className="ml-7"/>
+          
+        </>
       ),
       href: "/Neeraj_Sharma.pdf",
       style: "rounded-br-md",
       download: true,
+      bgColor: "#0077B5",
     },
   ];
 
-  
-
   return (
-    
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center lg:fixed top-4 left-4">
-      <ul className="flex flex-col lg:flex-row lg:space-x-2 ">
-        {links.map(({ id, child, href, style, download }) => (
+    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed">
+      <ul>
+        {links.map(({ id, child, href, style, download, bgColor }) => (
           <li
             key={id}
             className={
-              
-              
-               "flex justify-between items-center w-full h-14 px-4 hover:translate-x-2 duration-300 bg-blue-100 rounded-md shadow-md" +
-              // "flex justify-between items-center w-full h-14 px-4 hover:translate-x-2 duration-300 bg-transparent rounded-md shadow-md" +
+              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 " +
               " " +
               style
             }
-            
+            style={{ backgroundColor: bgColor }}
           >
             <a
               href={href}
-              
-              className="flex justify-between items-center w-full text-gray-800"
+              className="flex justify-between items-center w-full text-white"
               download={download}
               target="_blank"
               rel="noreferrer"
