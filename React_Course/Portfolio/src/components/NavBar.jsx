@@ -32,7 +32,8 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center w-full h-20 px-4 text-white bg-black fixed">
-      <div>
+      <div className="flex items-center">
+      {/* <img src="/coder5.png" alt="Logo" className="h-11 mr-2" /> */}
         {/* <h1 className="text-2xl font ml-2">Neeraj Sharma</h1> */}
 
         {/* <img src="/coder5.png" alt="Logo" className="h-11" /> */}

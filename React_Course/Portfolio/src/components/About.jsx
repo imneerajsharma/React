@@ -4,10 +4,15 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      // className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      // className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col justify-center items-center"
     >
-      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
-        
+      {/* <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"> */}
+
+      {/* <div className="mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex flex-col justify-center"> */}
+      {/* <div className="max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col justify-center"> */}
+      <div className="max-w-4xl px-4 sm:px-6 lg:px-8 flex flex-col justify-center w-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
             About
@@ -15,19 +20,18 @@ const About = () => {
         </div>
 
         <p
-          className="text-xl"
+          className="text-xl text-center py-4 lg:py-1"
           style={{ textAlign: "justify", color: "#969696" }}
         >
-          Welcome My name is Neeraj Sharma, and I am an experienced Software
+          Welcome! My name is Neeraj Sharma, and I am an experienced Software
           Development Engineer with a passion for creating reliable and scalable
           software systems. I have a strong foundation in Java, DSA, Python, and
           various frameworks such as Spring, Django, and React. I am proficient
           in Agile development methodologies and have experience working with
           cloud computing platforms such as AWS, Heroku, and Vercel.
         </p>
-        <br />
         <p
-          className="text-xl"
+          className="text-xl  text-center py-4 lg:py-3"
           style={{ textAlign: "justify", color: "#969696" }}
         >
           In my previous role at Larsen & Toubro (L&T) Technology Services, I
@@ -42,25 +46,21 @@ const About = () => {
           Singleton.
         </p>
 
-        <br />
-
         <p
-          className="text-xl"
+          className="text-xl text-center py-4 lg:py-3"
           style={{ textAlign: "justify", color: "#969696" }}
         >
           In addition to my work experience, I have also worked on several
-          personal projects to further develop my skills and showcase my
-          abilities.iNotebook,NewsFox,TextUtils,MovieFlix I hold a Master of
+          personal projects to further develop my skills and showcase my abilities iNotebook, NewsFox, TextUtils, MovieFlix.
+           I hold a Master of
           Management degree from York University's Schulich School of Business
           and a Post Graduate Diploma in Advanced Computing from the Center for
           Development of Advanced Computing in Pune, India. I also hold a
           Bachelor of Technology degree in Civil Engineering from KIIT
           University in Orissa, India.
         </p>
-
-        <br />
         <p
-          className="text-xl"
+          className="text-xl  text-center py-4 lg:py-3"
           style={{ textAlign: "justify", color: "#969696" }}
         >
           I am excited about taking on a Junior SDE role in a dynamic and
