@@ -11,6 +11,12 @@ import MySql from "../assets/mysql.svg";
 import GIT from "../assets/git.svg";
 import Jenkins from "../assets/jenkins.svg";
 import AWS from "../assets/aws.svg";
+import C from "../assets/c.svg";
+import BootStrap from "../assets/bootstrap.svg";
+import HTML from "../assets/html.svg";
+import CSS from "../assets/css3.svg";
+import PYTHON from "../assets/python.svg";
+
 
 // import html from "../assets/html.png";
 // import css from "../assets/css.png";
@@ -73,23 +79,54 @@ const Experience = () => {
       title: "MySql",
       style: "shadow-orange-400",
     },
+    
     {
       id: 9,
+      src: C,
+      title: "C",
+      style: "shadow-blue-800",
+    },
+    {
+      id: 9,
+      src: PYTHON,
+      title: "PYTHON",
+      style: "shadow-orange-400",
+    },
+    {
+      id: 10,
+      src: CSS,
+      title: "CSS",
+      style: "shadow-blue-400",
+    },
+    {
+      id: 10,
+      src: HTML,
+      title: "HTML",
+      style: "shadow-orange-600",
+    },
+    
+    {
+      id: 11,
       src: GIT,
       title: "GitHub",
       style: "shadow-orange-600",
     },
     {
-      id: 10,
+      id: 12,
       src: Jenkins,
       title: "Jenkins",
       style: "shadow-red-600",
-    },
-    {
-      id: 10,
+    },{
+      id: 13,
       src: AWS,
       title: "AWS",
       style: "shadow-orange-400",
+    },
+    {
+      id: 14,
+      src: BootStrap,
+      title: "BootStrap",
+      style: "shadow-purple-800",
     },
   ];
 

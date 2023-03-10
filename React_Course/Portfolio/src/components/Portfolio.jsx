@@ -9,18 +9,21 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      name: "iNotebook",
       src: iNotebook,
       demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/inotebook",
     },
     {
       id: 2,
+      name: "Newsfox",
       src: Newsfox,
       demoUrl: "https://www.youtube.com/watch?v=7jh27Aq5FZI",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/newsapp",
     },
     {
       id: 3,
+      name: "Textutils",
       src: Textutils,
       demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/textutils",
@@ -28,6 +31,7 @@ const Portfolio = () => {
 
     {
       id: 4,
+      name: "MovieFlix",
       src: MovieFlix,
       demoUrl: "https://github.com/imneerajsharma/Movie_flix",
       codeUrl: "https://github.com/imneerajsharma/Movie_flix",
@@ -50,13 +54,16 @@ const Portfolio = () => {
         </div>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0">
-          {portfolios.map(({ id, src, demoUrl, codeUrl  }) => (
+          {portfolios.map(({ id,name, src, demoUrl, codeUrl  }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
                 src={src}
                 alt=""
                 className="rounded-md duration-200 hover:scale-105"
               />
+              <div>
+                <div className="text-center py-2">{name}</div>
+              </div>
               <div className="flex items-center justify-center">
                 
               <a href={demoUrl} target="_blank" rel="noopener noreferrer">
@@ -70,6 +77,7 @@ const Portfolio = () => {
                   </button>
                 </a>
               </div>
+              
             </div>
           ))}
         </div>
