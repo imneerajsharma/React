@@ -34,6 +34,18 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
+          {/* GitHub <FaGithub size={30} color="#211F1F"/> */}
+          LeetCode<img src="/Leetcode.png" alt="Leetcode" width={50} height={50} className="ml-4"/>
+        </>
+      ),
+      href: "https://leetcode.com/imNeerajSharma/",
+      bgColor: "#211F1F",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 4,
+      child: (
+        <>
           {/* Mail <HiOutlineMail size={30} color="#D44638"/> */}
           <div className="flex items-center ml-4"></div>
           Mail <img src="/gmail.png" alt="Gmail" width={50} height={50} className="ml-10"/>
@@ -44,7 +56,7 @@ const SocialLinks = () => {
       bgColor: "#D44638",
     },
     {
-      id: 4,
+      id: 5,
       child: (
         <>
           {/* Resume <BsFillPersonLinesFill size={30} color="#0077B5"/> */}
