@@ -17,11 +17,9 @@ public class MovieService {
         return movieRepository.findAll();
     }
 
-//    public List<Movie> allMovies(){
-//        List<Movie> movies = movieRepository.findAll();
-//        movies.forEach(System.out::println);
-//        return movies;
-//    }
+    public Optional<Movie> singleMovie(String imdbId){
+        return movieRepository.findMovieByImdbId(imdbId);
+    }
 
 
 }
