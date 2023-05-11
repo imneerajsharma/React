@@ -68,14 +68,14 @@ function App() {
             
             <Router>
             
-        <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
+        <Navbar title="Wordwise" mode={mode} toggleMode={toggleMode} />
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Alert alert={alert} />
         <div className="container mt-3">
 
           <Routes>
             <Route exact path="/about" element={<About  mode={mode} />}> </Route>
-            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try TextUtils - Word counter , Character Counter Remove extra Spaces" mode={mode} />}></Route>
+            <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Try Wordwise - Word counter , Character Counter Remove extra Spaces " mode={mode} />}></Route>
           </Routes>
         </div>
       </Router>

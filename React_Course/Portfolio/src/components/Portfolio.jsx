@@ -1,4 +1,5 @@
 import React from "react";
+import cineflix from "../assets/portfolio/cineflix.png";
 import iNotebook from "../assets/portfolio/inotebook.png";
 import MovieFlix from "../assets/portfolio/Moviesflix.jpg";
 import Textutils from "../assets/portfolio/textutils.png";
@@ -9,9 +10,16 @@ const Portfolio = () => {
   const portfolios = [
     {
       id: 1,
+      name: "CineFlix",
+      src: cineflix,
+      demoUrl: "https://cineflix-13d1c.web.app/",
+      codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/MovieFlix/netflix-build-youtube",
+    },
+    {
+      id: 2,
       name: "iNotebook",
       src: iNotebook,
-      demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
+      demoUrl: "https://neerajsharma-inotebook.vercel.app/",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/inotebook",
     },
     {
@@ -23,9 +31,9 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      name: "Textutils",
+      name: "Wordwise",
       src: Textutils,
-      demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
+      demoUrl: "https://neerajsharma-wordwise.vercel.app/",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/textutils",
     },
 

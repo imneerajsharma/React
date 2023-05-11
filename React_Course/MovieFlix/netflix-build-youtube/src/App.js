@@ -1,12 +1,33 @@
 import React from 'react';
 import './App.css';
-import HomeScreen from './HomeScreen';
+import HomeScreen from "./screens/HomeScreen";
+import LoginScreen from './screens/LoginScreen';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
+  const user=null;
   return (
     <div className="app">
-        {/* <h1>Lets build Netflix replica!</h1> */}
-        <HomeScreen/>
+        <Router>
+          {!user?(<LoginScreen/>):(
+            <Routes>          
+            <Route 
+            exact path="/" element={<HomeScreen />} >
+            </Route>
+            <Route 
+            exact path="/hi" element={<h1>HI my namefsdrftgyjhukjgfhjk</h1>}
+            >
+            </Route>
+          </Routes>
+          )}
+        
+
+    </Router>
+
     </div>
   );
 }

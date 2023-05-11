@@ -39,7 +39,76 @@ export default function TextForm(props) {
         setText(newText);
         props.showAlert(" Extra space removed!", "success")
     }
+    const handleSentenceCountClick = () => {
+        let sentenceCount = 0;
+        if (text) {
+          sentenceCount = text.split(/[.?!]/).length - 1;
+        }
+        props.showAlert(`Number of sentences: ${sentenceCount}`, 'success');
+      }
 
+    //   const handleSearchReplaceClick = () => {
+    //     const searchWord = prompt('Enter the word to search:');
+    //     const replaceWord = prompt(`Enter the word to replace "${searchWord}" with:`);
+    //     if (searchWord && replaceWord) {
+    //       let newText = text.replaceAll(searchWord, replaceWord);
+    //       setText(newText);
+    //       props.showAlert(`"${searchWord}" replaced with "${replaceWord}"`, 'success');
+    //     }
+    //   };
+    const handleSearchReplaceClick = () => {
+        const searchWord = prompt('Enter the word to search:');
+        const replaceWord = prompt(`Enter the word to replace "${searchWord}" with:`);
+        if (searchWord && replaceWord) {
+          if (text.includes(searchWord)) {
+            let newText = text.replaceAll(searchWord, replaceWord);
+            setText(newText);
+            props.showAlert(`"${searchWord}" replaced with "${replaceWord}"`, 'success');
+          } else {
+            props.showAlert(`"${searchWord}" does not exist in the text.`, 'danger');
+          }
+        }
+      };
+      
+
+      const handleCapitalizeClick = () => {
+        let newText = text.toLowerCase().split(' ').map((word) => {
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join(' ');
+        setText(newText);
+        props.showAlert(' Capitalized the first letter of each word!', 'success');
+      };
+    
+      const handleCamelCaseClick = () => {
+        let newText = text.toLowerCase().split(' ').map((word, index) => {
+          if (index === 0) {
+            return word;
+          }
+          return word.charAt(0).toUpperCase() + word.slice(1);
+        }).join('');
+        setText(newText);
+        props.showAlert(' Converted to camelCase!', 'success');
+      };
+    
+      const handleReverseClick = () => {
+        let newText = text.split('').reverse().join('');
+        setText(newText);
+        props.showAlert(' Text reversed!', 'success');
+      };
+    
+      const handleDownloadClick = () => {
+        const element = document.createElement('a');
+        const file = new Blob([text], {type: 'text/plain'});
+        element.href = URL.createObjectURL(file);
+        element.download = 'text.txt';
+        document.body.appendChild(element);
+        element.click();
+        document.body.removeChild(element);
+        props.showAlert(' Text downloaded!', 'success');
+      };
+
+      
+    
 
 
 
@@ -68,6 +137,13 @@ export default function TextForm(props) {
         <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleClearClick}>Clear</button>
         <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleCopyClick}>Copy Text</button>
         <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleRemoveExtraSpacesClick}>Remove Extra Spaces</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleSentenceCountClick}>Count Sentences</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleSearchReplaceClick}>Replace Word</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleCapitalizeClick}>Capitalized</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleCamelCaseClick}>Camel Case</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleReverseClick}>Reverse</button>
+        <button  disabled={text.length===0}  className="btn btn-primary mx-2 my-1" onClick={handleDownloadClick}>Download File</button>
+
         
         
     </div>
