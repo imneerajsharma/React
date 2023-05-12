@@ -10,7 +10,8 @@ function LoginScreen() {
         <div className="loginScreen_background">
             {/* <img src="https://cdn.wallpapersafari.com/24/74/zgeTuV.jpg" alt="" /> */}
             <img className='loginScreen_logo'
-             src="./cineflix2.png" alt="" />
+            //  src="./cineflix2.png" alt="" />
+             src="./Picture1.png" alt="" />
              <button onClick={()=>setSignIn(true)}
              className='loginScreen_button'
              >Sign In</button>
@@ -46,7 +47,9 @@ function LoginScreen() {
             
         
         </div>
+        
     </div>
+    
   )
 }
 

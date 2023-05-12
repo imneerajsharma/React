@@ -19,7 +19,7 @@ const Portfolio = () => {
       id: 2,
       name: "iNotebook",
       src: iNotebook,
-      demoUrl: "https://neerajsharma-inotebook.vercel.app/",
+      demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/inotebook",
     },
     {

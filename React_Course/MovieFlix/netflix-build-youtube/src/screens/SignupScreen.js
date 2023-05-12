@@ -1,6 +1,16 @@
 import React,{useRef} from 'react';
-import "./SignupScreen.css";
 import {auth} from  "../firebase";
+import "./SignupScreen.css";
+// import {
+//     createUserWithEmailAndPassword,
+//     signInWithEmailAndPassword,
+//   } from "firebase/auth";
+
+  import {
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+  } from "firebase/auth";
+
 
 function SignupScreen() {
     const emailRef=useRef(null);
@@ -10,7 +20,8 @@ function SignupScreen() {
     const register =(e) => {
         e.preventDefault();
 
-        auth.createUserWithEmailAndPassword(
+        createUserWithEmailAndPassword(
+            auth,
             emailRef.current.value,
             passwordRef.current.value
         )
@@ -18,14 +29,33 @@ function SignupScreen() {
             console.log(authUser);
         })
             
-        .catch((error)=>{
-            alert(error.message);
+        .catch((err)=>{
+            alert("The email is invalid! Type in your real email address or check if it is correctly formated and try again.");
         });
     };
 
     const signIn=(e) => {
         e.preventDefault();
+
+
+        signInWithEmailAndPassword(
+            auth,
+            emailRef.current.value,
+            passwordRef.current.value
+          )
+            .then((authUser) => {
+              // Signed in
+              console.log(authUser);
+              // ...
+            })
+            .catch((error) => {
+              alert("There is no user with corresponding credentials. Please try again.");
+            });
     };
+
+    
+
+
   return (
     <div className='signupScreen'>
       <form>
@@ -40,7 +70,7 @@ function SignupScreen() {
         </h4>
       </form>
     </div>
-  )
+  );
 }
 
-export default SignupScreen
+export default SignupScreen;
