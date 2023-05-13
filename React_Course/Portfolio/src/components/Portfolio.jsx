@@ -1,5 +1,5 @@
 import React from "react";
-import cineflix from "../assets/portfolio/cineflix.png";
+import cineflix from "../assets/portfolio/cineflix1.png";
 import iNotebook from "../assets/portfolio/inotebook.png";
 import MovieFlix from "../assets/portfolio/Moviesflix.jpg";
 import Textutils from "../assets/portfolio/textutils.png";

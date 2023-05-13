@@ -1,0 +1,16 @@
+ 1071  Y
+ 1072  npm run start
+ 1073  npm run build
+ 1074  firebase deploy
+ 1075  npm run build
+ 1076  ng build --prod
+ 1077  npm run build --prod
+ 1078  firebase login
+ 1079  firebase init hosting
+ 1080  firebase login
+ 1081  firebase init
+ 1082  firebase deploy
+ 1083  firebase init
+ 1084  npm install @stripe/stripe-js\n
+ 1085  npm run start
+ 1086  npm run start
