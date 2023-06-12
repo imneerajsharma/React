@@ -9,7 +9,9 @@ const Home = () => {
     <div
       name="home"
       // className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 flex flex-wrap"
+       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 flex flex-wrap"
+      //className="w-full min-h-screen bg-gradient-to-b from-gray-800 to-black text-white flex flex-col justify-center items-center"
+
     >
       {/* <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-0 md:flex-row"> */}
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
@@ -29,12 +31,12 @@ const Home = () => {
 
           <div>
             <Link
-              to="portfolio"
+              to="projects"
               smooth
               duration={500}
               className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
             >
-              Portfolio
+              Projects
               <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
