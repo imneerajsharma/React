@@ -6,17 +6,19 @@ import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
+import Leetcode from "./components/Leetcode";
 
 function App() {
   return (
     <div>
       <NavBar />
       <Home />
+      <Leetcode/>
       <Portfolio />
       <Experience />
       <About />
       <Contact />
-      <SocialLinks />
+      <SocialLinks />      
       <Footer/>
     </div>
   );

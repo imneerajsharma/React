@@ -14,18 +14,22 @@ const NavBar = () => {
     },
     {
       id: 2,
-      link: "projects",
+      link: "Leetcode",
     },
     {
       id: 3,
-      link: "experience",
+      link: "projects",
     },
     {
       id: 4,
-      link: "about",
+      link: "experience",
     },
     {
       id: 5,
+      link: "about",
+    },
+    {
+      id: 6,
       link: "contact",
     },
   ];
