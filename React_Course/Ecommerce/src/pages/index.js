@@ -7,8 +7,6 @@ export default function Home() {
       <Head>
         <title>Amazon 2.0</title>
       </Head>
-
-     <h1>Hi Neeraj Sharma</h1>
      <Header/>
 
      
