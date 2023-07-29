@@ -1,0 +1,44 @@
+[debug] [2023-07-27T23:41:02.650Z] ----------------------------------------------------------------------
+[debug] [2023-07-27T23:41:02.651Z] Command:       /usr/local/bin/node /opt/homebrew/bin/firebase init
+[debug] [2023-07-27T23:41:02.651Z] CLI Version:   12.4.6
+[debug] [2023-07-27T23:41:02.652Z] Platform:      darwin
+[debug] [2023-07-27T23:41:02.652Z] Node Version:  v16.20.1
+[debug] [2023-07-27T23:41:02.655Z] Time:          Thu Jul 27 2023 19:41:02 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-07-27T23:41:02.655Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-27T23:41:02.691Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-27T23:41:02.691Z] > authorizing via signed-in user (webhosting279@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/neerajsharma/Neeraj_Learning/React/React_Course/Test 03/Amazon-starter-template-nextjs-main
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-07-27T23:41:05.009Z] Using project from CLI flag: sample-next-app-1234
+[debug] [2023-07-27T23:41:05.012Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/sample-next-app-1234 [none]
+[debug] [2023-07-27T23:41:05.480Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/sample-next-app-1234 200
+[debug] [2023-07-27T23:41:05.480Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/sample-next-app-1234 {"projectId":"sample-next-app-1234","projectNumber":"175642687269","displayName":"sample-next-app","name":"projects/sample-next-app-1234","resources":{"hostingSite":"sample-next-app-1234"},"state":"ACTIVE","etag":"1_387853fb-7c76-4f5d-8aec-e50ebc28b087"}
+[info] i  Using project sample-next-app-1234 (sample-next-app) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

@@ -1,0 +1,79 @@
+import React from 'react'
+import Image from 'next/image';
+//  import {
+//    MenuIcon,SearchIcon,ShoppingCartIcon
+//  } from "@heroicons/react/outline";
+ import { Menu, Search, ShoppingCart } from '@mui/icons-material';
+ 
+// import MagnifyingGlassIcon from "@heroicons/react/outline";
+// import { ShoppingCartIcon } from "@heroicons/react/outline";
+
+// Importing from Heroicons version 2
+//import { Bars3Icon } from "@heroicons/react/24/outline"; // outline version for MenuIcon
+// import { BeakerIcon } from "@heroicons/react/24/outline";
+
+// import MagnifyingGlassIcon from "@heroicons/react/24/solid"; // outline version for MagnifyingGlassIcon
+// import { ShoppingCartIcon } from "@heroicons/react/24/outline"; // outline version for ShoppingCartIcon
+
+
+function Header() {
+  return (
+    
+    <header>
+      {/* Top Nav */}
+      <div className="flex items-center bg-amazon_blue p-1 flex-grow py-2">
+          <div className='mt-2 flex items-center flex-grow sm:flex-grow-0'>
+            <Image
+              src='https://links.papareact.com/f90'
+              width={150}
+              height={40}
+              objectFit="contain"
+              className="cursor-pointer"
+
+            />
+          </div>
+          {/* Search  */}
+          <div className= "hidden sm:flex items-center h-10 rounded-md flex-grow cursor-pointer  bg-yellow-400 hover:bg-yellow-500">
+            <input className=" p-2 h-full w-6 flex-grow flex-shrink rounded-l-md focus:outline-none px-4"  type="text"/>
+            <Search className="h-12 p-4"/>
+          </div>
+          {/* Right */}
+          <div className="text-white flex items-center text-xs space-x-6 mx-6 whitespace-nowrap ">
+              <div className="highlight-on-hover">
+                <p>Hello Neeraj Sharma</p>
+                <p className='font-extrabold md:text-sm'>Account & Lists</p>
+              </div>
+              <div className="highlight-on-hover">
+                <p>Returns</p>
+                <p className='font-extrabold md:text-sm'>&Orders</p>
+              </div>
+              <div className="relative highlight-on-hover flex items-center">
+
+                <span className="absolute top-0 right-0 md:right-10 h-4 w-4 bg-yellow-400 text-center rounded-full text-black font bold">0</span>
+                <ShoppingCart className='h-10'/>
+                <p className='hidden md:inline font-extrabold md:text- mt-2' >Basket</p>
+              </div>
+          </div>
+      </div>
+    
+      {/* Bottom Nav */}
+      <div className='flex items-center space-x-3 p-2 pl-6 bg-amazon_blue-light text-white text-sm'>        
+        <p className='highlight-on-hover flex items-center'>
+          <Menu className="h-6 mr-1"/>
+          All
+        </p>
+        <p className='highlight-on-hover'>Prime Video</p>
+        <p className='highlight-on-hover'>Amazon Business</p>
+        <p className='highlight-on-hover'>Today's Deals</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Electronics</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Food & Grocery</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Prime</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Buy Again</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Shopper Toolkit</p>
+        <p className='highlight-on-hover hidden lg:inline-flex'>Health & Personal Care</p>
+      </div>
+    </header>
+  )
+}
+
+export default Header

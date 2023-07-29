@@ -1,0 +1,16 @@
+ 1067  history
+ 1068  npm run build
+ 1069  sudo npm install -g firebase tools
+ 1070  firebase login
+ 1071  firebase init hosting
+ 1072  firebase deploy
+ 1073  firebase login
+ 1074  firebase init
+ 1075  firebase deploy
+ 1076  npm rub build
+ 1077  npm run build
+ 1078  firebase deploy
+ 1079  firebase deploy
+ 1080  firebase deploy
+ 1081  npm run build
+ 1082  firebase deploy
