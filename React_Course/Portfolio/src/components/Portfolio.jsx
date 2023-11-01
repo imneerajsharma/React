@@ -5,6 +5,8 @@ import MovieFlix from "../assets/portfolio/Moviesflix.jpg";
 import Textutils from "../assets/portfolio/textutils.png";
 import Newsfox from "../assets/portfolio/newsfox.png";
 import amazon from  "../assets/portfolio/amazon.png"
+import threadstrends from  "../assets/portfolio/threadstrends.png"
+
 
 
 const Portfolio = () => {
@@ -17,28 +19,35 @@ const Portfolio = () => {
       codeUrl: "https://github.com/imneerajsharma/React/tree/main/React_Course/Ecommerce",
     },
     {
-      id: 1,
+      id: 2,
+      name: "Threads and Trends",
+      src: threadstrends,
+      demoUrl: "https://www.youtube.com/watch?v=NNAVuI9lLqQ",
+      codeUrl: "https://www.youtube.com/watch?v=NNAVuI9lLqQ",
+    },
+    {
+      id: 3,
       name: "CineFlix",
       src: cineflix,
       demoUrl: "https://cineflix-13d1c.web.app/",
       codeUrl: "https://www.youtube.com/watch?v=28nHDzbj3Ro",
     },
     {
-      id: 2,
+      id: 4,
       name: "iNotebook",
       src: iNotebook,
       demoUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
       codeUrl: "https://www.youtube.com/watch?v=oxxAVNQSlis",
     },
     {
-      id: 2,
+      id: 5,
       name: "Newsfox",
       src: Newsfox,
       demoUrl: "https://www.youtube.com/watch?v=7jh27Aq5FZI",
       codeUrl: "https://www.youtube.com/watch?v=7jh27Aq5FZI",
     },
     {
-      id: 3,
+      id: 6,
       name: "Wordwise",
       src: Textutils,
       demoUrl: "https://neerajsharma-wordwise.vercel.app/",
@@ -46,7 +55,7 @@ const Portfolio = () => {
     },
 
     {
-      id: 4,
+      id: 7,
       name: "MovieFlix",
       src: MovieFlix,
       demoUrl: "https://github.com/imneerajsharma/Movie_flix",

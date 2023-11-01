@@ -23,7 +23,7 @@ const Home = () => {
           {/* <p className=" text-1xl sm:text-2xl text-gray-500 py-4 max-w-md"> */}
           {/* <p className="text-base sm:text-2xl text-gray-500 py-2 md:py-4 max-w-md">  */}
           <p className="text-base sm:text-lg text-gray-500 py-2 md:py-4 max-w-md"> 
-            I have 2 years of experience building and designing software.
+            I have experience in building and designing software.
             Currently, I love to work on web applications using technologies like
             Java,Spring, Data Structures and Algorithms, React, JavaScript, REST API,and Hibernate.
           </p>
